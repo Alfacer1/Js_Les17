@@ -1,6 +1,5 @@
-function doMath(x, znak, y) {
+const doMath = (x, znak, y) => {
     let result;
-
     switch (znak) {
         case '+':
             result = x + y;
@@ -24,12 +23,11 @@ function doMath(x, znak, y) {
             console.log("Невірний оператор.");
             return;
     }
-
     console.log(`Результат: ${result}`);
 }
 
-let x = parseFloat(prompt("Введіть перше число:"));
+const x = parseFloat(prompt("Введіть перше число:"));
 let znak = prompt("Введіть математичний оператор (+, -, *, /, %, ^):");
-let y = parseFloat(prompt("Введіть друге число:"));
+const y = parseFloat(prompt("Введіть друге число:"));
 
 doMath(x, znak, y);
