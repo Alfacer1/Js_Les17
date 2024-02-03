@@ -27,7 +27,7 @@ const doMath = (x, znak, y) => {
 }
 
 const x = parseFloat(prompt("Введіть перше число:"));
-let znak = prompt("Введіть математичний оператор (+, -, *, /, %, ^):");
+const znak = prompt("Введіть математичний оператор (+, -, *, /, %, ^):");
 const y = parseFloat(prompt("Введіть друге число:"));
 
 doMath(x, znak, y);
